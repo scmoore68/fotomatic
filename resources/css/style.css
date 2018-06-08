@@ -27,6 +27,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -249,26 +250,32 @@ div.button {
 #features-section {
   display: flex;
   justify-content: space-between;
-  /* padding: 4rem 5%; */
+  padding: 4rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
   margin: 0px 1.25rem;
+  padding: 2rem;
   background-color: white;
+}
+
+.feature .content {
+  padding: 2.5rem 0;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  padding: 2rem 2rem 2.5rem 2rem;
+  margin: 0 auto;
 }
 
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
+  line-height: 1.2;
   color: #4a4a4a;
 }
 
@@ -319,6 +326,7 @@ div.button {
 #filters-section .content h2 {
   font-size: 2.25rem;
   font-weight: bold;
+  /* opacity: 100% */
   color: white;
 }
 
@@ -331,6 +339,7 @@ div.button {
 
 #filters-section .images-container {
   max-width: 100%;
+  display: flex;
   padding: 0 1%;
 }
 
@@ -370,34 +379,35 @@ div.button {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
+  font-style: italic;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
